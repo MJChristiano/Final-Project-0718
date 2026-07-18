@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Movie Search Starter</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+	<header class="site-header">
+		<span class="site-header-title">🎬 Movie Search</span>
+	</header>
+
+	<main class="container">
+		<!-- Search Section -->
+		<form id="search-form">
+			<input id="search-input" type="text" placeholder="Enter a movie title" />
+			<select id="type-select">
+				<option value="">All Types</option>
+				<option value="movie">Movies</option>
+				<option value="series">Series</option>
+				<option value="episode">Episodes</option>
+			</select>
+			<button type="submit">Search</button>
+		</form>
+
+		<!-- Message / Status -->
+		<p id="message"></p>
+
+		<!-- Results Section -->
+		<section id="results"></section>
+
+		<!-- Pagination -->
+		<div id="pagination"></div>
+	</main>
+
+	<!-- Movie Detail Modal -->
+	<div id="modal-overlay" class="hidden">
+		<div id="modal">
+			<button id="modal-close">✕</button>
+			<div id="modal-content"></div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
